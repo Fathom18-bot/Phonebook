@@ -1,15 +1,7 @@
-# Exercise
-# Write a program that allows the user to manage a phonebook using a dictionary array. Implement functionalities to;
-# 1. Add contacts
-# 2. Search for contacts
-# 3. Display the phonebook
-# 4. Delete a contact
-# 5. Edit contact
-
 phonebook = {}
 
 while True:
-    choice = input("\n1. Add contact  2. Search for a contact  3. Display  4. Delete  5. Edit contact  6. Exit: ")
+    choice = input("\n1. Add contact  2. Search for a contact  3. Display  4. Delete  5. Edit contact  6.Exit: ")
 
     if choice == "1":
         name = input("Name: ")
@@ -45,3 +37,7 @@ while True:
             print("Updated")
         else:
             print("Not found")
+
+    elif choice == "6" :
+        print(f"Goodbye")
+        break    
